@@ -1,0 +1,3 @@
+git config --global user.name "sunqunqi1"
+git config --global user.email "1746023126@qq.com"
+11
