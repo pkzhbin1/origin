@@ -1,0 +1,78 @@
+1.visualSVN-server:
+服务端
+创建仓库（配置库）：
+1）打开visualSVN SERVER
+2）选中Repositoriers，右键
+3）选择 create new repository
+4）输入仓库名称，使用默认的配置直接下一步
+5）最后create，然后finish
+
+创建用户：
+1.选择Users目录
+2.鼠标在右边右键，create user
+3.输入用户的账号和密码，要记住，后面客户端操作的时候要用。
+
+
+赋予用户权限：
+1.选择刚才创建的仓库，然后右键
+2.选择属性（properties）
+3.选择我们刚才新建的用户，点击确定即可。
+
+
+
+2.tortoiseSVN:
+客户端
+
+不要装在有中文的路径，不要装太深的路径。
+
+
+1.提交文件到仓库有两种方法：
+导入（import）:首次才能导入，不能连续导入。选择要导入的目录或则文件，右键找svn的弹出框，然后选择import，输入用户密码即可。
+
+提交文件到仓库：首先要checkout仓库到本地路径下，然后将要添加的文件放入本地仓库，然后选择这些文件，右键点svn-》添加（add），然后再次右键选择svn commit，填写提交信息，点击确定。
+
+
+2.修改svn缓存的账号信息：
+在空白的地方，右键-》setting，找到save data-》点击author data的clear all即可清理账号缓存的信息，当你再次提交的时候就会让你输入新的账号和密码了。
+
+3.从本地删除一个文件，并提交到服务器（仓库）。
+
+4.如果是误操作删除了一些文件，想从服务器上恢复到本地，可以使用svn up。
+
+5.拉取分支，为了分支我需要重新创建新的带trunk，branches，tag目录的），然后import上次发的counter工程代码到trunk版本，然后checkout下来到本地。再从本地开始拉取分支，右键-》branches，主要要填写一个分支名称（注意不能branches，因为名字会冲突）。然后checkout分支版本到本地。
+
+6.合并分支，分别在分支版本和主干版本都提交一些修改，然后在主干的本地工作区，右键-》merge（两个线合并到一起的图标），然后选择merge a range of revisions
+->URL to merge from里面要选择合入的版本，比如我在trunk版本想合入branches1版本，那么这里就要选择branches1的版本路径，其他就是下一步下一步即可。
+
+7.冲突产生的原理，要求记忆并且要能用自己的语言描述冲突产生的过程（能画出流程图），其次要能解决冲突。
+
+
+Revision Graph:
+查看当前项目或文件的修订历史图示如果项目比较大型的话，一般会建多个分支，和多个里程碑可以看到项目的全貌
+
+Diff with previous version:
+比较该文档和上一个版本中的差异部分。
+
+Show log
+显示当前文件(夹)的所有修改历史。
+SVN支持文件以及文件夹独立的版本追溯
+
+
+Revert to this revision
+版本回溯(慎用)
+
+update to revision:
+回到历史的某个版本（需要输入具体的版本号）
+
+repo-browse：
+查看当前工作区的路径。
+
+clean up：
+清理当前的工作区（常用于工作区有损坏或则文件缓存问题。）
+
+revert：
+回滚工作区到当前版本的原始内容。
+
+
+8.设置文件锁，选择某个文件，右键-》海龟-》properties（属性）-》new-》needs lock-》locking required-》ok，然后你会看到这个文件的属性多了一个 lock，然后再提交上去，ok这个文件就已经设置了文件锁了。那么想修改这个文件必须要先get lock，然后在修改，在提交，并且一旦提交之后就不能重复修改了，必须再次get lock.
+release lock可以释放文件锁。
