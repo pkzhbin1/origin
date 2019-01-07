@@ -1,0 +1,5 @@
+git config --global user.name "Dzijuan"
+
+git config --global user.email "470247467@qq.com"
+
+git pull origin master
