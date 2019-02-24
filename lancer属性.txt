@@ -1,0 +1,2 @@
+git config --global user.name "lancer"    
+git config --global user.email "526031748@qq.com"
