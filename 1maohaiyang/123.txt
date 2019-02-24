@@ -1,0 +1,6 @@
+https://github.com/pkzhbin1/origin
+
+git config --global user.name "qq95b"    
+git config --global user.email "93062366@qq.com"
+
+使用右键->git gui base进入命令行->git pull origin master
