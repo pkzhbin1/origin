@@ -4,9 +4,7 @@ git config --global user.email "xyw2620@163.com"
 1
 2
 3
-4
-5
-6
+
 
  更新数据库
  使用右键->git gui base进入命令行->git pull origin master  
