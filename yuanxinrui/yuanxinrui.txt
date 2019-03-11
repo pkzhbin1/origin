@@ -1,0 +1,4 @@
+git reset HEAD xiaohui/15.txt¡¡¡¡
+git checkout xiaohui/15.txt
+git status
+git reset --hard 30e2c4eaf9362d465d83d2558bdd093f3a3a7026
