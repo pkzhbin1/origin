@@ -11,11 +11,5 @@
 
 
 
-Repository Name: 666
-
-Repository URL: https://51testin36/svn/666
-
-Configured repository permissions:
-- Everyone (Read / Write)
 
 
