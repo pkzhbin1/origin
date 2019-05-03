@@ -1,0 +1,4 @@
+https://github.com/pkzhbin1/origin.git
+
+git config --global user.name "zhangyating2019"    
+git config --global user.email "1092020461@qq.com"
